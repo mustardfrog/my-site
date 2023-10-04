@@ -1,29 +1,23 @@
 ---
-import Button from "../components/Button.astro";
 import Navbar from "../components/NavBar.astro";
 import Layout from "../layouts/Layout.astro";
+import '../styles/gloabal.css'
 ---
 
 <Layout title="Sithu Maung Maung Cho">
-<Navbar />
+  <Navbar />
   <main>
-    <p class="text-[#F2F2EF] text-3xl">Hi, I am <span class="text-5xl text-red-500 transition hover:-translate-y-1 inline-block" >Sithu</span>. </p>
-
+    <p class="text-[#0f0f0f] text-3xl">
+      Hi, I am <span
+        class="text-5xl text-red-500 transition hover:-translate-y-1 inline-block"
+        >Sithu</span
+      >,
+    </p>
     <div class="p-4">
-    <p class="text-[#DED3A6] text-2xl">
-    I am a developer who is passionate about programming and linux;
-    </p>
-    <p class="text-[#DED3A6] text-2xl">
-    I primarily works with typescript and c++;
-    </p>
+      <p class="text-[#000000] text-2xl">
+        a developer who is passionate about programming and linux;
+      </p>
+      <p class="text-[#000000] text-2xl">I enjoy using Rust;</p>
     </div>
   </main>
 </Layout>
-
-<style>
-  main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 120ch;
-  }
-</style>

@@ -1,0 +1,27 @@
+{/*  
+  :root {
+  --accent: 210, 11, 15,
+  --accent-gradient: linear-gradient(
+  45deg,
+  rgb(var(--accent)),
+  #da62c4 30%,
+  white 60%
+  );
+} */}
+html {
+  font-family: system-ui, sans-serif;
+  color: #000000;
+  /* background-color: #f9f9f9; */
+}
+code {
+  font-family: Monaco, Menlo, Lucida Console, Liberation Mono,
+  DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+body {
+  background-color: #e8e8e8;
+}
+main {
+  margin: auto;
+  padding: 1.5rem;
+  max-width: 120ch;
+}

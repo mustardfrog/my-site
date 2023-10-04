@@ -1,14 +1,30 @@
 ---
-
 ---
 
 <div class="flex justify-end">
-<div class="flex py-8 px-2 ">
-    <a href="/" class="text-[#DED3A6] px-6 text-2xl transition-all ease-in-out hover:scale-105 hover:text-[#759242] cursor-pointer">~/mustardfrog</a>
-    <a href="/about" class="text-[#DED3A6] px-6 text-2xl transition-all ease-in-out hover:scale-105 hover:text-[#759242] cursor-pointer">about_me</a>
-    <a href="/blogs" class="text-[#DED3A6] px-6 text-2xl transition-all ease-in-out hover:scale-105 hover:text-[#759242] cursor-pointer">blogs</a>
+  <div class="flex py-8 px-2">
+    <a
+      href="/"
+      class="text-[#000000] px-6 text-2xl transition-all ease-in-out hover:scale-105 hover:text-[#1f1f1f] cursor-pointer"
+      >~/mustardfrog</a
+    >
+    <a
+      href="/about"
+      class="text-[#000000] px-6 text-2xl transition-all ease-in-out hover:scale-105 hover:text-[#1f1f1f] cursor-pointer"
+      >about_me</a
+    >
+    <div class="hidden md:flex space-x-4">
+      <div class="relative group">
+	<button
+	id="dropdown-button"
+	class="text-[#000000] px-6 text-2xl transition-all ease-in-out group-hover:scale-105 group-hover:text-[#1f1f1f] cursor-pointer"
+	>more...</button
+	>
+        <div id="dropdown-menu" class="absolute rounded-lg hidden bg-[#e9e9e9] text-black group-hover:block transform transition-all ease-in-out">
+          <a href="/albums" class="block px-4 py-2 hover:bg-black hover:text-white rounded-sm transition">albums</a>
+          <a href="/blogs" class="block px-4 py-2 hover:bg-black hover:text-white rounded-sm transition">blogs</a>
+          <a href="/projects" class="block px-4 py-2 hover:bg-black hover:text-white rounded-s transition">projects</a>
+        </div>
+      </div>
+  </div>
 </div>
-</div>
-
-<style>
-</style>
