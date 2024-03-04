@@ -1,12 +1,14 @@
 ---
 import Navbar from "../../components/NavBar.astro";
-import BlogLayout from "../../layouts/BlogLayout.astro";
-import '../../styles/gloabal.css'
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
 ---
 
-<BlogLayout title="Blogs">
+<Layout title="Blogs">
 <Navbar />
   <main>
     Blog
+    <Card title="post 1" href="/post-1" />
+    <Card title="post 2" href="/post-2" />
   </main>
-</BlogLayout>
+</Layout>
