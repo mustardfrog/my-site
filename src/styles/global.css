@@ -1,27 +1,36 @@
-{/*  
-  :root {
-  --accent: 210, 11, 15,
-  --accent-gradient: linear-gradient(
-  45deg,
-  rgb(var(--accent)),
-  #da62c4 30%,
-  white 60%
-  );
-} */}
 html {
   font-family: system-ui, sans-serif;
-  color: #000000;
-  /* background-color: #f9f9f9; */
+  color: #eeeeee;
 }
+
+.suse-body {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
 code {
   font-family: Monaco, Menlo, Lucida Console, Liberation Mono,
   DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
+
 body {
-  background-color: #e8e8e8;
+  font-family: "Suse";
+  background-color: #212517;
 }
+
 main {
   margin: auto;
   padding: 1.5rem;
   max-width: 120ch;
+}
+
+.genericText {
+  color: #DED3A6;
+}
+
+::selection {
+  color: #212517;
+  background: #DED3A6;
 }
