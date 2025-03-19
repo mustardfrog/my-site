@@ -2,15 +2,18 @@
 interface Props {
 	title: string;
 	href: string;
+	content: string;
 }
 
-const { href, title } = Astro.props;
+const { href, title, content, content_2, tags } = Astro.props;
 ---
 
-<div class="link-card border-black outline-black background-black text-bold">
-	<a href={href}>
-		<h2>
-			{title}
-		</h2>
+<div class="bg-[#212111] p-6 rounded-xl min-w-80 max-w-96 transition-all eas-in-out hover:scale-105 hover:bg-[#313111]">
+	<a href={href}> 
+		<h3 class="text-rose-600 text-xl"> {title}</h3>
+		<p class="text-gray-500 text-sm">{tags}</p>
+		<slot />
+		<p class="text-gray-400">{content}</p>
+		<p class="text-gray-400">{content_2}</p>
 	</a>
 </div>

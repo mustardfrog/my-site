@@ -1,43 +1,39 @@
 ---
 import Navbar from "../components/NavBar.astro";
+import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Projects">
   <Navbar />
   <main>
+    <div class="h-full flex w-full justify-center items-center p-2">
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 p-4 md:p-2 xl:p-5">
 
-    <div class="bg-[#212111] p-6 rounded-xl min-w-80 max-w-96 transition-all eas-in-out hover:scale-105 hover:bg-[#374709]">
-      <a href="https://github.com/mustardfrog"> 
-        <p class="text-rose-600 text-xl"> Github</p>
-      </a>
-    </div>
+        <div class="bg-[#212111] p-6 rounded-xl min-w-80 max-w-96 transition-all eas-in-out hover:scale-105 hover:bg-[#374709]">
+          <a href="https://github.com/mustardfrog"> 
+            <p class="text-rose-600 text-xl text-center content-center"> Github</p>
+          </a>
+        </div>
 
-    <br>
-    <div class="bg-[#212111] p-6 rounded-xl min-w-80 max-w-96 transition-all eas-in-out hover:scale-105 hover:bg-[#374709]">
-      <a href="https://github.com/mustardfrog/bubblons"> 
-        <h3 class="text-rose-700 text-2xl">bubblons</h3>
-        <p class="text-gray-400">- Guess the flag game but inside the terminal </p>
-      </a>
-    </div>
+        <Card title="bubblons" href="https://github.com/mustardfrog/bubblons" content="- Guess the flag game but inside the terminal" 
+          tags="#tui #commandline #go"
+        />
 
-    <br>
-    <div class="bg-[#212111] p-6 rounded-xl min-w-80 max-w-96 transition-all eas-in-out hover:scale-105 hover:bg-[#374709]">
-      <a href="https://github.com/mustardfrog/bible-tui"> 
-        <h3 class="text-rose-700 text-2xl">bible-tui  </h3>
-        <p class="text-gray-600">(work in progress..)</p>
-        <p class="text-gray-400">- Read the Bible just in command line </p>
-        <p class="text-gray-400">- Built with Go, Bubbletea</p>
-      </a>
-    </div>
+        <Card title="bible-tui" href="https://github.com/mustardfrog/bible-tui" 
+          content="- Read the Bible just in command line" content_2="- Built with Go, Bubbletea "
+          tags="#tui #commandline #go"
+        >
+          <p class="text-gray-600 text-l">(work in progress...)</p>
+        </Card>
 
+        <Card title="pinkish_day for Neovim" href="https://github.com/mustardfrog/pinkish_day" content="- PINK!!" tags="#neovim #theme">
+        </Card>
 
-    <br>
-    <div class="bg-[#212111] p-6 rounded-xl min-w-80 max-w-96 transition-all eas-in-out hover:scale-105 hover:bg-[#374709]">
-      <a href="https://github.com/mustardfrog/bubblons"> 
-        <h3 class="text-rose-700 text-2xl">Access Innovatios Website</h3>
-        <p class="text-gray-400">- Give them a call if you are in dallas</p>
-      </a>
+        <Card title="Access Innovations Website" href="https://access-innovations.com" content="- Give them a call if you are in dallas" tags="#website">
+        </Card>
+
+      </div>
     </div>
 
   </main>
